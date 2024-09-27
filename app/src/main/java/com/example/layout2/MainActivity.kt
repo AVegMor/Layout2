@@ -44,7 +44,7 @@ fun MyLayout() {
             Modifier
                 .fillMaxWidth()
                 .background(Color.Cyan)
-                .weight(0.75f), contentAlignment = Alignment.Center
+                .weight(0.75f), contentAlignment = Alignment.TopEnd
         ) {
             Text("Ejemplo 1")
         }
@@ -58,7 +58,7 @@ fun MyLayout() {
                 modifier = Modifier
                     .fillMaxHeight()
                     .background(Color.Red)
-                    .weight(1f), contentAlignment = Alignment.Center
+                    .weight(1f), contentAlignment = Alignment.BottomStart
             ) {
                 Text("Ejemplo 2")
             }
@@ -78,7 +78,7 @@ fun MyLayout() {
             Modifier
                 .fillMaxWidth()
                 .background(Color.Magenta)
-                .weight(1f), contentAlignment = Alignment.Center
+                .weight(1f), contentAlignment = Alignment.TopCenter
         ) {
             Text("Ejemplo 4")
         }
