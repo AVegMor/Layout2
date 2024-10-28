@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -38,7 +39,7 @@ class MainActivity : ComponentActivity() {
 fun MyLayout() {
     Column(
         Modifier
-            .fillMaxSize()
+            .fillMaxSize().padding(top = 20.dp)
     ) {
         Box(
             Modifier
@@ -83,7 +84,6 @@ fun MyLayout() {
             Text("Ejemplo 4")
         }
     }
-
 }
 @Composable
 fun MySpacer(height:Int){
